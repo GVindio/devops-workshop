@@ -57,7 +57,7 @@ environment {
             def uploadSpec = """{
                           "files": [
                             {
-                              "pattern": "target/(*)",
+                              "pattern": "demo-workshop/2.1.4/(*)",
                               "target": "libs-release-local/{1}",
                               "flat": "false",
                               "props" : "${properties}",
