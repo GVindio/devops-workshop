@@ -57,7 +57,7 @@ environment {
             def uploadSpec = """{
                           "files": [
                             {
-                              "pattern": "project-local-repo/(*)",
+                              "pattern": "target/(*)",
                               "target": "libs-release-local/{1}",
                               "flat": "false",
                               "props" : "${properties}",
