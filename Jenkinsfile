@@ -57,7 +57,7 @@ environment {
                      def uploadSpec = """{
                           "files": [
                             {
-                              "pattern": "**/target/*.pom",
+                              "pattern": "**/target/*.jar",
                               "target": "libs-release-local/{1}",
                               "flat": "false",
                               "props" : "${properties}",
