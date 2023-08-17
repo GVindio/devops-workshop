@@ -57,7 +57,7 @@ environment {
                      def uploadSpec = """{
                           "files": [
                             {
-                              "pattern": "jarstaging/(*)",
+                              "pattern": "jarstaging/com/valaxy/demo-workshop/2.1.4(*)",
                               "target": "libs-release-local/{1}",
                               "flat": "false",
                               "props" : "${properties}",
