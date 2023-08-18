@@ -25,8 +25,8 @@ environment {
         }
 
         stage('SonarQube analysis') {
-    environment {
-                scannerHome = tool 'valaxy-sonar-scanner'
+environment {
+            scannerHome = tool 'valaxy-sonar-scanner'
             }
         steps{
                 withSonarQubeEnv('valaxy-sonarqube-server') { // If you have configured more than one global server connection, you can specify its name
@@ -35,19 +35,19 @@ environment {
             }
         }
         stage("Quality Gate"){
-        steps {
+            steps {
             script {
                     timeout(time: 1, unit: 'HOURS') { // Just in case something goes wrong, pipeline will be killed after a timeout
         def qg = waitForQualityGate() // Reuse taskId previously collected by withSonarQubeEnv
-                        if (qg.status != 'OK') {
+        if (qg.status != 'OK') {
         error "Pipeline aborted due to quality gate failure: ${qg.status}"
-                        }
-                    }
-                }
+             }
             }
         }
+    }
+}
         stage("Jar Publish") {
-        steps {
+            steps {
             script {
              echo '<--------------- Jar Publish Started --------------->'
         def server = Artifactory.newServer url: registry + "/artifactory", credentialsId: "artfiact-cred"
