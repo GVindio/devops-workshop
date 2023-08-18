@@ -1,6 +1,6 @@
 def registry = 'https://gvindio.jfrog.io/'
 def imageName = 'gvindio.jfrog.io/gvindiodevops-workshop-docker-local/ttrend'
-def version   = '2.1.4'
+def version   = '2.1.2'
 pipeline {
     agent {
         node {
