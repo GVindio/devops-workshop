@@ -79,12 +79,14 @@
 	
 	<build>
 		<plugins>
-         <plugin>
+        <plugin>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>2.2.0.RELEASE</version>
             <configuration>
-                <executable>true</executable>
+                <mainClass>com.example.YourMainClass</mainClass>
             </configuration>
+        </plugin>
             </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
