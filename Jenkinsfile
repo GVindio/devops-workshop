@@ -61,7 +61,7 @@ environment {
                               "target": "libs-release-local/{1}",
                               "flat": "false",
                               "props" : "${properties}",
-                              "include": ".pom"
+                              "include": ["*.pom"]
                             }
                          ]
                      }"""
