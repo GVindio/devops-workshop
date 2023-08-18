@@ -57,7 +57,7 @@ environment {
                      def uploadSpec = """{
                           "files": [
                             {
-                              "pattern": "/target/(*)",
+                              "pattern": "**/jfrog/(*)",
                               "target": "libs-release-local/{1}",
                               "flat": "false",
                               "props" : "${properties}",
