@@ -12,7 +12,7 @@ environment {
         stage("build"){
             steps {
                  echo "----------- build started ----------"
-                sh 'mvn clean deploy -Dmaven.test.skip=true'
+                sh 'mvn install -Dmaven-plugin-version=2.5.4'
                  echo "----------- build complted ----------"
             }
         }
