@@ -55,7 +55,7 @@ environment {
         def uploadSpec = """{
                     "files": [
                         {
-                            "pattern": "**/demo-workshop/(*)",
+                            "pattern": "jarstaging/(*)",
                             "target": "libs-release-local/{1}",
                             "flat": "false",
                             "props": "${properties}",
