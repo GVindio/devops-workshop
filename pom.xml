@@ -83,9 +83,9 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
             <version>2.2.0.RELEASE</version>
-            <!-- <configuration>
+            <configuration>
                 <mainClass>com.example.YourMainClass</mainClass>
-            </configuration> -->
+            </configuration>
         
             </plugin>
 			<plugin>
